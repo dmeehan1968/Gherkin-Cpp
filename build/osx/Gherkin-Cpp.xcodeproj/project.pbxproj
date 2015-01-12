@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3FF93141A64870100AB9427 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3FF93131A64870100AB9427 /* Node.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3FF92EB1A63FB7B00AB9427 /* libGherkin-Cpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGherkin-Cpp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FF93031A63FE1000AB9427 /* AbstractParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractParser.h; sourceTree = "<group>"; };
+		A3FF93041A63FE1000AB9427 /* Feature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature.h; sourceTree = "<group>"; };
+		A3FF93051A63FE1000AB9427 /* FeatureParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureParser.h; sourceTree = "<group>"; };
+		A3FF93061A63FE1000AB9427 /* GherkinParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GherkinParser.h; sourceTree = "<group>"; };
+		A3FF93071A63FE1000AB9427 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		A3FF93081A63FE1000AB9427 /* NodeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeFactory.h; sourceTree = "<group>"; };
+		A3FF93091A63FE1000AB9427 /* NodeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeVisitor.h; sourceTree = "<group>"; };
+		A3FF930A1A63FE1000AB9427 /* ParserNodeException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParserNodeException.h; sourceTree = "<group>"; };
+		A3FF930B1A63FE1000AB9427 /* Printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		A3FF930C1A63FE1000AB9427 /* Scenario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
+		A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScenarioParser.h; sourceTree = "<group>"; };
+		A3FF930E1A63FE1000AB9427 /* Step.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Step.h; sourceTree = "<group>"; };
+		A3FF93101A64860D00AB9427 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		A3FF93131A64870100AB9427 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3FF92E81A63FB7B00AB9427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3FF92E21A63FB7B00AB9427 = {
+			isa = PBXGroup;
+			children = (
+				A3FF93101A64860D00AB9427 /* README.md */,
+				A3FF93011A63FE1000AB9427 /* include */,
+				A3FF930F1A63FE1000AB9427 /* src */,
+				A3FF92EC1A63FB7B00AB9427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FF92EC1A63FB7B00AB9427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FF92EB1A63FB7B00AB9427 /* libGherkin-Cpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FF93011A63FE1000AB9427 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A3FF93021A63FE1000AB9427 /* Gherkin */,
+			);
+			name = include;
+			path = ../../include;
+			sourceTree = "<group>";
+		};
+		A3FF93021A63FE1000AB9427 /* Gherkin */ = {
+			isa = PBXGroup;
+			children = (
+				A3FF93031A63FE1000AB9427 /* AbstractParser.h */,
+				A3FF93041A63FE1000AB9427 /* Feature.h */,
+				A3FF93051A63FE1000AB9427 /* FeatureParser.h */,
+				A3FF93061A63FE1000AB9427 /* GherkinParser.h */,
+				A3FF93071A63FE1000AB9427 /* Node.h */,
+				A3FF93081A63FE1000AB9427 /* NodeFactory.h */,
+				A3FF93091A63FE1000AB9427 /* NodeVisitor.h */,
+				A3FF930A1A63FE1000AB9427 /* ParserNodeException.h */,
+				A3FF930B1A63FE1000AB9427 /* Printer.h */,
+				A3FF930C1A63FE1000AB9427 /* Scenario.h */,
+				A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */,
+				A3FF930E1A63FE1000AB9427 /* Step.h */,
+			);
+			path = Gherkin;
+			sourceTree = "<group>";
+		};
+		A3FF930F1A63FE1000AB9427 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A3FF93131A64870100AB9427 /* Node.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A3FF92E91A63FB7B00AB9427 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A3FF92EA1A63FB7B00AB9427 /* Gherkin-Cpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FF92F61A63FB7B00AB9427 /* Build configuration list for PBXNativeTarget "Gherkin-Cpp" */;
+			buildPhases = (
+				A3FF92E71A63FB7B00AB9427 /* Sources */,
+				A3FF92E81A63FB7B00AB9427 /* Frameworks */,
+				A3FF92E91A63FB7B00AB9427 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gherkin-Cpp";
+			productName = "Gherkin-Cpp";
+			productReference = A3FF92EB1A63FB7B00AB9427 /* libGherkin-Cpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FF92E31A63FB7B00AB9427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Replicated Solutions Limited";
+				TargetAttributes = {
+					A3FF92EA1A63FB7B00AB9427 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = A3FF92E61A63FB7B00AB9427 /* Build configuration list for PBXProject "Gherkin-Cpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3FF92E21A63FB7B00AB9427;
+			productRefGroup = A3FF92EC1A63FB7B00AB9427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FF92EA1A63FB7B00AB9427 /* Gherkin-Cpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3FF92E71A63FB7B00AB9427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FF93141A64870100AB9427 /* Node.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A3FF92F41A63FB7B00AB9427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A3FF92F51A63FB7B00AB9427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A3FF92F71A63FB7B00AB9427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3FF92F81A63FB7B00AB9427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3FF92E61A63FB7B00AB9427 /* Build configuration list for PBXProject "Gherkin-Cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FF92F41A63FB7B00AB9427 /* Debug */,
+				A3FF92F51A63FB7B00AB9427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FF92F61A63FB7B00AB9427 /* Build configuration list for PBXNativeTarget "Gherkin-Cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FF92F71A63FB7B00AB9427 /* Debug */,
+				A3FF92F81A63FB7B00AB9427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3FF92E31A63FB7B00AB9427 /* Project object */;
+}
