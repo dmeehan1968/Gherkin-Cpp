@@ -13,6 +13,8 @@
 #include "Scenario.h"
 #include "Step.h"
 
+#include <regex>
+
 namespace Gherkin {
 
     class NodeFactory {
