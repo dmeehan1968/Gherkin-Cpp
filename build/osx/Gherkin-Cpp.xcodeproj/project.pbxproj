@@ -15,7 +15,6 @@
 		A304F4501A66A72F0092DB7A /* NodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93081A63FE1000AB9427 /* NodeFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4511A66A72F0092DB7A /* NodeVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93091A63FE1000AB9427 /* NodeVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4521A66A72F0092DB7A /* ParserNodeException.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930A1A63FE1000AB9427 /* ParserNodeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A304F4531A66A72F0092DB7A /* Printer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930B1A63FE1000AB9427 /* Printer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4541A66A72F0092DB7A /* Scenario.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930C1A63FE1000AB9427 /* Scenario.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4551A66A72F0092DB7A /* ScenarioParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4561A66A72F0092DB7A /* Step.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930E1A63FE1000AB9427 /* Step.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,7 +31,6 @@
 		A3FF93081A63FE1000AB9427 /* NodeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeFactory.h; sourceTree = "<group>"; };
 		A3FF93091A63FE1000AB9427 /* NodeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeVisitor.h; sourceTree = "<group>"; };
 		A3FF930A1A63FE1000AB9427 /* ParserNodeException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParserNodeException.h; sourceTree = "<group>"; };
-		A3FF930B1A63FE1000AB9427 /* Printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
 		A3FF930C1A63FE1000AB9427 /* Scenario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
 		A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScenarioParser.h; sourceTree = "<group>"; };
 		A3FF930E1A63FE1000AB9427 /* Step.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Step.h; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				A3FF93081A63FE1000AB9427 /* NodeFactory.h */,
 				A3FF93091A63FE1000AB9427 /* NodeVisitor.h */,
 				A3FF930A1A63FE1000AB9427 /* ParserNodeException.h */,
-				A3FF930B1A63FE1000AB9427 /* Printer.h */,
 				A3FF930C1A63FE1000AB9427 /* Scenario.h */,
 				A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */,
 				A3FF930E1A63FE1000AB9427 /* Step.h */,
@@ -121,7 +118,6 @@
 				A304F4501A66A72F0092DB7A /* NodeFactory.h in Headers */,
 				A304F4511A66A72F0092DB7A /* NodeVisitor.h in Headers */,
 				A304F4521A66A72F0092DB7A /* ParserNodeException.h in Headers */,
-				A304F4531A66A72F0092DB7A /* Printer.h in Headers */,
 				A304F4541A66A72F0092DB7A /* Scenario.h in Headers */,
 				A304F4551A66A72F0092DB7A /* ScenarioParser.h in Headers */,
 				A304F4561A66A72F0092DB7A /* Step.h in Headers */,
