@@ -9,6 +9,8 @@
 #ifndef Zing_Node_h
 #define Zing_Node_h
 
+#include "Location.h"
+
 #include <initializer_list>
 #include <string>
 #include <list>
@@ -22,14 +24,16 @@ namespace Gherkin {
 
     public:
 
-        Node();
+        Node(Location const &location);
 
-        Node(std::initializer_list<std::shared_ptr<Node>> const &nodes);
+        Node(Location const &location, std::initializer_list<std::shared_ptr<Node>> const &nodes);
 
-        Node(std::string const &keyword,
+        Node(Location const &location,
+             std::string const &keyword,
              std::string const &name);
 
-        Node(std::string const &keyword,
+        Node(Location const &location,
+             std::string const &keyword,
              std::string const &name,
              std::initializer_list<std::shared_ptr<Node>> const &nodes);
 
@@ -39,6 +43,8 @@ namespace Gherkin {
             return stream;
 
         }
+
+        Location &location();
 
         std::string const &keyword() const ;
 
@@ -59,7 +65,8 @@ namespace Gherkin {
                   std::initializer_list<std::shared_ptr<Node>> const &nodes) ;
         
     private:
-        
+
+        Location                                _location;
         std::string                             _keyword;
         std::string                             _name;
         std::list<std::shared_ptr<Node>>        _children;

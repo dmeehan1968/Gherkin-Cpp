@@ -17,9 +17,12 @@ namespace Gherkin {
     public:
         using Base = AbstractParser<InputIterator>;
 
-        ScenarioParser(InputIterator begin, InputIterator const end, std::shared_ptr<Node> const &root)
+        ScenarioParser(InputIterator begin,
+                       InputIterator const end,
+                       std::shared_ptr<Location> const &location,
+                       std::shared_ptr<Node> const &root)
         :
-        Base(begin, end, root)
+        Base(begin, end, location, root)
         {}
 
         void visit(Step &node) {

@@ -21,16 +21,19 @@ namespace Gherkin {
     public:
         using Base = AbstractParser<InputIterator>;
 
-        GherkinParser(InputIterator begin, InputIterator const end, std::shared_ptr<Node> const &root)
+        GherkinParser(InputIterator begin,
+                      InputIterator const end,
+                      std::shared_ptr<Location> const &location,
+                      std::shared_ptr<Node> const &root)
         :
-        Base(begin, end, root)
+        Base(begin, end, location, root)
         {}
 
         void visit(Feature &node) {
 
             auto feature = std::make_shared<Feature>(node);
 
-            Base::begin() = FeatureParser<InputIterator>(Base::begin(), Base::end(), feature).parse();
+            Base::begin() = FeatureParser<InputIterator>(Base::begin(), Base::end(), Base::location(), feature).parse();
 
             Base::root()->addChild(feature);
             

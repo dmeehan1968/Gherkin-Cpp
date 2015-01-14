@@ -15,10 +15,11 @@ namespace Gherkin {
 
     public:
 
-        Feature(std::string const &name,
+        Feature(Location const &location,
+                std::string const &name,
                 std::initializer_list<std::shared_ptr<Node>> const &nodes)
         :
-        Node("feature", name, nodes)
+        Node(location, "feature", name, nodes)
         {}
 
         static std::shared_ptr<Node> create(Node const &node) {

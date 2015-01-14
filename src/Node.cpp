@@ -14,31 +14,50 @@
 
 namespace Gherkin {
 
-    Node::Node() {
+    Node::Node(Location const &location)
+    :
+    _location(location)
+    {
 
         init("", "", {});
 
     }
 
-    Node::Node(std::initializer_list<std::shared_ptr<Node>> const &nodes) {
+    Node::Node(Location const &location,
+               std::initializer_list<std::shared_ptr<Node>> const &nodes)
+    :
+    _location(location)
+    {
 
         init("", "", nodes);
 
     }
 
-    Node::Node(std::string const &keyword,
-               std::string const &name) {
+    Node::Node(Location const &location,
+               std::string const &keyword,
+               std::string const &name)
+    :
+    _location(location)
+    {
 
         init(keyword, name, {});
 
     }
 
-    Node::Node(std::string const &keyword,
+    Node::Node(Location const &location,
+               std::string const &keyword,
                std::string const &name,
-               std::initializer_list<std::shared_ptr<Node>> const &nodes) {
+               std::initializer_list<std::shared_ptr<Node>> const &nodes)
+    :
+    _location(location)
+    {
 
         init(keyword, name, nodes);
 
+    }
+
+    Location &Node::location() {
+        return _location;
     }
 
     std::string const &Node::keyword() const {
@@ -56,7 +75,7 @@ namespace Gherkin {
         if (_keyword.empty() && _name.empty()) {
             os << "root";
         } else {
-            os << _keyword << ": " << _name;
+            os << _location << ": " << _keyword << ": " << _name;
         }
         os << ", " << _children.size() << (_children.size() == 1 ? " child" : " children");
         return os.str();

@@ -15,11 +15,12 @@ namespace Gherkin {
 
     public:
 
-        Step(std::string const &keyword,
+        Step(Location const &location,
+             std::string const &keyword,
              std::string const &name,
              std::initializer_list<std::shared_ptr<Node>> const &nodes = {})
         :
-        Node(keyword, name, nodes)
+        Node(location, keyword, name, nodes)
         {}
 
         static std::shared_ptr<Node> create(Node const &node) {

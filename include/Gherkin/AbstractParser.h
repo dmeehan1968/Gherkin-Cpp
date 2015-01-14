@@ -23,31 +23,36 @@ namespace Gherkin {
 
         AbstractParser(InputIterator begin,
                        InputIterator const end,
+                       std::shared_ptr<Location> const &location,
                        std::shared_ptr<Node> root)
         :
         _begin(begin),
         _end(end),
-        _root(root)
+        _root(root),
+        _location(location)
         {}
 
         InputIterator parse() {
 
             while (_begin != _end) {
 
-                auto node = NodeFactory::create(*_begin);
+                auto node = NodeFactory::create(*_location, *_begin);
 
                 if (node) {
 
-                    auto before = _begin;
+                    auto locationBefore = *_location;
+                    auto begin = _begin;
 
                     try {
 
+                        ++(*_location);
                         ++_begin;
                         node->accept(*this);
 
                     } catch (ParserNodeException &e) {
 
-                        _begin = before;
+                        *_location = locationBefore;
+                        _begin = begin;
                         break;
 
                     }
@@ -55,10 +60,11 @@ namespace Gherkin {
                 } else {
 
                     std::cout   << "Skipping: \""
-                    << *_begin
-                    << "\""
-                    << std::endl;
+                                << *_begin
+                                << "\""
+                                << std::endl;
 
+                    ++(*_location);
                     ++_begin;
 
                 }
@@ -79,6 +85,10 @@ namespace Gherkin {
 
         InputIterator end() const {
             return _end;
+        }
+
+        std::shared_ptr<Location> const &location() const {
+            return _location;
         }
 
         void visit(Node &node) {
@@ -107,10 +117,11 @@ namespace Gherkin {
         
     private:
         
-        InputIterator           _begin;
-        InputIterator const     _end;
-        std::shared_ptr<Node>   _root;
-        
+        InputIterator               _begin;
+        InputIterator const         _end;
+        std::shared_ptr<Node>       _root;
+        std::shared_ptr<Location>   _location;
+
     };
 
 }

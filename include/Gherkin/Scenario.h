@@ -15,10 +15,11 @@ namespace Gherkin {
 
     public:
 
-        Scenario(std::string const &name,
+        Scenario(Location const &location,
+                 std::string const &name,
                  std::initializer_list<std::shared_ptr<Node>> const &nodes)
         :
-        Node("scenario", name, nodes)
+        Node(location, "scenario", name, nodes)
         {}
 
         static std::shared_ptr<Node> create(Node const &node) {

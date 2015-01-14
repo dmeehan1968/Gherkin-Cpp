@@ -21,7 +21,7 @@ namespace Gherkin {
 
     public:
 
-        static std::shared_ptr<Node> create(std::string const &line) {
+        static std::shared_ptr<Node> create(Location const &location, std::string const &line) {
 
             std::regex  expr("^\\s*(feature|scenario|given|when|then|and|but|examples|\"\"\"):?\\s*(.*)\\s*$",
                              std::regex::icase | std::regex::ECMAScript);
@@ -32,7 +32,7 @@ namespace Gherkin {
                 auto keyword = matches[1].str();
                 auto name = matches[2].str();
 
-                auto node = std::make_shared<Node>(keyword, name);
+                auto node = std::make_shared<Node>(location, keyword, name);
 
                 auto typedNode = Feature::create(*node);
                 if (typedNode) {

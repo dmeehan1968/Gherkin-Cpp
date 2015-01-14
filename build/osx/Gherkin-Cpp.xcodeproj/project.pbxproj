@@ -18,10 +18,12 @@
 		A304F4541A66A72F0092DB7A /* Scenario.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930C1A63FE1000AB9427 /* Scenario.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4551A66A72F0092DB7A /* ScenarioParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A304F4561A66A72F0092DB7A /* Step.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930E1A63FE1000AB9427 /* Step.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4C11A66F23E0092DB7A /* Location.h in Headers */ = {isa = PBXBuildFile; fileRef = A304F4C01A66F17D0092DB7A /* Location.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3FF93141A64870100AB9427 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3FF93131A64870100AB9427 /* Node.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A304F4C01A66F17D0092DB7A /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		A3FF92EB1A63FB7B00AB9427 /* libGherkin-Cpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGherkin-Cpp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FF93031A63FE1000AB9427 /* AbstractParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractParser.h; sourceTree = "<group>"; };
 		A3FF93041A63FE1000AB9427 /* Feature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature.h; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A3FF93041A63FE1000AB9427 /* Feature.h */,
 				A3FF93051A63FE1000AB9427 /* FeatureParser.h */,
 				A3FF93061A63FE1000AB9427 /* GherkinParser.h */,
+				A304F4C01A66F17D0092DB7A /* Location.h */,
 				A3FF93071A63FE1000AB9427 /* Node.h */,
 				A3FF93081A63FE1000AB9427 /* NodeFactory.h */,
 				A3FF93091A63FE1000AB9427 /* NodeVisitor.h */,
@@ -114,6 +117,7 @@
 				A304F44C1A66A72F0092DB7A /* Feature.h in Headers */,
 				A304F44D1A66A72F0092DB7A /* FeatureParser.h in Headers */,
 				A304F44E1A66A72F0092DB7A /* GherkinParser.h in Headers */,
+				A304F4C11A66F23E0092DB7A /* Location.h in Headers */,
 				A304F44F1A66A72F0092DB7A /* Node.h in Headers */,
 				A304F4501A66A72F0092DB7A /* NodeFactory.h in Headers */,
 				A304F4511A66A72F0092DB7A /* NodeVisitor.h in Headers */,
