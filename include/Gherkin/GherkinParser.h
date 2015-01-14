@@ -9,6 +9,10 @@
 #ifndef Zing_GherkinParser_h
 #define Zing_GherkinParser_h
 
+#include "AbstractParser.h"
+#include "Feature.h"
+#include "FeatureParser.h"
+
 namespace Gherkin {
 
     template <class InputIterator>

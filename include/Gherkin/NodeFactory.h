@@ -9,6 +9,10 @@
 #ifndef Zing_NodeFactory_h
 #define Zing_NodeFactory_h
 
+#include "Feature.h"
+#include "Scenario.h"
+#include "Step.h"
+
 namespace Gherkin {
 
     class NodeFactory {

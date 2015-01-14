@@ -9,6 +9,11 @@
 #ifndef Zing_AbstractParser_h
 #define Zing_AbstractParser_h
 
+#include "NodeVisitor.h"
+#include "Node.h"
+#include "NodeFactory.h"
+#include "ParserNodeException.h"
+
 namespace Gherkin {
 
     template <class InputIterator>

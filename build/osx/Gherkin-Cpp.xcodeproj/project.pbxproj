@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A304F44B1A66A72F0092DB7A /* AbstractParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93031A63FE1000AB9427 /* AbstractParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F44C1A66A72F0092DB7A /* Feature.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93041A63FE1000AB9427 /* Feature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F44D1A66A72F0092DB7A /* FeatureParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93051A63FE1000AB9427 /* FeatureParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F44E1A66A72F0092DB7A /* GherkinParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93061A63FE1000AB9427 /* GherkinParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F44F1A66A72F0092DB7A /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93071A63FE1000AB9427 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4501A66A72F0092DB7A /* NodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93081A63FE1000AB9427 /* NodeFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4511A66A72F0092DB7A /* NodeVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF93091A63FE1000AB9427 /* NodeVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4521A66A72F0092DB7A /* ParserNodeException.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930A1A63FE1000AB9427 /* ParserNodeException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4531A66A72F0092DB7A /* Printer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930B1A63FE1000AB9427 /* Printer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4541A66A72F0092DB7A /* Scenario.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930C1A63FE1000AB9427 /* Scenario.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4551A66A72F0092DB7A /* ScenarioParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930D1A63FE1000AB9427 /* ScenarioParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A304F4561A66A72F0092DB7A /* Step.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FF930E1A63FE1000AB9427 /* Step.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3FF93141A64870100AB9427 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3FF93131A64870100AB9427 /* Node.cpp */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +113,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A304F44B1A66A72F0092DB7A /* AbstractParser.h in Headers */,
+				A304F44C1A66A72F0092DB7A /* Feature.h in Headers */,
+				A304F44D1A66A72F0092DB7A /* FeatureParser.h in Headers */,
+				A304F44E1A66A72F0092DB7A /* GherkinParser.h in Headers */,
+				A304F44F1A66A72F0092DB7A /* Node.h in Headers */,
+				A304F4501A66A72F0092DB7A /* NodeFactory.h in Headers */,
+				A304F4511A66A72F0092DB7A /* NodeVisitor.h in Headers */,
+				A304F4521A66A72F0092DB7A /* ParserNodeException.h in Headers */,
+				A304F4531A66A72F0092DB7A /* Printer.h in Headers */,
+				A304F4541A66A72F0092DB7A /* Scenario.h in Headers */,
+				A304F4551A66A72F0092DB7A /* ScenarioParser.h in Headers */,
+				A304F4561A66A72F0092DB7A /* Step.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
