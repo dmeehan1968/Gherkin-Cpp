@@ -40,7 +40,7 @@ namespace Gherkin {
 
                 if (node) {
 
-                    auto locationBefore = *_location;
+                    auto locationBegin = *_location;
                     auto begin = _begin;
 
                     try {
@@ -51,7 +51,7 @@ namespace Gherkin {
 
                     } catch (ParserNodeException &e) {
 
-                        *_location = locationBefore;
+                        *_location = locationBegin;
                         _begin = begin;
                         break;
 
