@@ -14,6 +14,8 @@
 #include "NodeFactory.h"
 #include "ParserNodeException.h"
 
+#include <iostream>
+
 namespace Gherkin {
 
     template <class InputIterator>
