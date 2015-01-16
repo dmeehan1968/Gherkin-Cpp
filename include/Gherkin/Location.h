@@ -17,6 +17,8 @@ namespace Gherkin {
 
     public:
 
+        Location() : _line(0) {}
+        
         Location(std::string const &filename,
                  size_t line = 1)
         :
